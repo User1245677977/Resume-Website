@@ -93,12 +93,8 @@ export const education = [
     credential: 'Professional Certificate in Coding: Full Stack Development with MERN',
     date: 'June 2026',
     badge: '48 CEUs',
-    details: [
-      'Completed an intensive program in full-stack web development using the MERN stack.',
-      'Built fully functional websites from scratch using JavaScript, HTML, and CSS.',
-      'Developed proficiency in React on the front end and MongoDB / Docker on the back end.',
-      'Covered database management, API integration, and deployment strategies.',
-    ],
+    summary: 'Intensive full-stack program covering the MERN stack, from front-end React to back-end deployment.',
+    story: "During this program I completed an intensive full-stack web development course built around the MERN stack. I built fully functional websites from scratch using JavaScript, HTML, and CSS, and developed real proficiency in React on the front end alongside MongoDB and Docker on the back end. The program gave me a strong foundation in both client-side and server-side development, including database management, API integration, and deployment strategies — the same skills I use day-to-day now, building sites like the Boss Mode teaser and the reporting platform at Bit Of Logic.",
   },
   {
     institution: 'University of Michigan, Dearborn',
@@ -106,19 +102,8 @@ export const education = [
     credential: 'Certificate in Computer Programming — Python (Summer Dual-Enrollment)',
     date: 'July 2022',
     badge: null,
-    details: [
-      'Completed an intensive summer college course in Python programming during junior year of high school.',
-      'Progressed from fundamental syntax to more advanced coding techniques.',
-      'Built a strong foundation in data structures and algorithms.',
-    ],
-  },
-  {
-    institution: 'Intercity Baptist High School',
-    location: 'Allen Park, MI',
-    credential: 'High School Diploma',
-    date: 'May 2023',
-    badge: null,
-    details: [],
+    summary: 'A summer dual-enrollment course that took me from Python basics to real algorithmic thinking.',
+    story: "The summer before my senior year of high school, I completed an intensive dual-enrollment college course in Python programming at the University of Michigan, Dearborn. I went in knowing the basics and came out having progressed through much more advanced coding techniques, with a genuinely solid foundation in data structures and algorithms. This was the course that got me hooked on programming in the first place — it's a big part of why I ended up pursuing this as a career.",
   },
 ]
 
