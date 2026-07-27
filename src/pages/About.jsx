@@ -1,41 +1,35 @@
-import { skills, commits } from '../data.js'
-
 export default function About() {
   return (
     <section className="page" id="page-about">
-      <div className="section-label">03 // background</div>
+      <div className="section-label">03 // about me</div>
       <h2 className="section-title">About</h2>
 
       <p className="bio-block">
-        I'm a full stack developer based in Southgate, MI, currently building production sites
-        and internal tools for early-stage clients. I hold a{' '}
-        <strong>Professional Certificate in Full Stack Development (<code>MERN</code>)</strong> from
-        MIT, and I've been writing code since high school — starting with autonomous robot
-        programming on my school's FIRST Robotics team.
+        I'm Sophia — a full stack developer based in Southgate, MI. I've been writing code
+        since high school, starting with autonomous robot programming on my school's FIRST
+        Robotics team, and I've been building production software ever since. Outside of work
+        I'm into <strong>[hobby one]</strong>, <strong>[hobby two]</strong>, and{' '}
+        <strong>[hobby three]</strong> — tell me what to put here and I'll swap it in.
       </p>
 
-      <div className="section-label" style={{ marginTop: '8px' }}>git log --oneline</div>
-
-      {commits.map((c) => (
-        <div className="commit" key={c.hash}>
-          <div className="commit-hash">{c.hash}</div>
-          <div className="commit-body">
-            <div className="commit-msg">{c.title}</div>
-            <div className="commit-meta">{c.meta}</div>
-            <div className="commit-desc">{c.desc}</div>
-          </div>
+      <div className="section-label" style={{ marginTop: '8px' }}>quick facts</div>
+      <div className="commit">
+        <div className="commit-hash">loc</div>
+        <div className="commit-body">
+          <div className="commit-desc">Southgate, MI</div>
         </div>
-      ))}
-
-      <div className="section-label" style={{ marginTop: '52px' }}>skills</div>
-      <div className="skills-grid">
-        {skills.map((s) => (
-          <div className="skill-chip" key={s}>{s}</div>
-        ))}
       </div>
-      <div className="learning-line">
-        <span className="amber">▸</span> currently learning:
-        <span className="amber">&nbsp;TBD — tell me what's next</span>
+      <div className="commit">
+        <div className="commit-hash">now</div>
+        <div className="commit-body">
+          <div className="commit-desc">Building production sites for early-stage clients</div>
+        </div>
+      </div>
+      <div className="commit">
+        <div className="commit-hash">fun</div>
+        <div className="commit-body">
+          <div className="commit-desc">[a fun fact about you goes here]</div>
+        </div>
       </div>
     </section>
   )

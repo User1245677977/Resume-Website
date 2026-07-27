@@ -16,7 +16,7 @@ export default function Education() {
 
   return (
     <section className="page" id="page-education">
-      <div className="section-label">04 // credentials</div>
+      <div className="section-label">06 // credentials</div>
       <h2 className="section-title">Education</h2>
 
       {education.map((e) => (

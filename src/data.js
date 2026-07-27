@@ -4,6 +4,8 @@ export const nav = [
   { id: 'home', label: 'Home' },
   { id: 'projects', label: 'Projects' },
   { id: 'about', label: 'About' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'employment', label: 'Employment' },
   { id: 'education', label: 'Education' },
   { id: 'contact', label: 'Contact' },
 ]

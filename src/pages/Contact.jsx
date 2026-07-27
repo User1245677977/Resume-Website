@@ -3,7 +3,7 @@ import { contactInfo } from '../data.js'
 export default function Contact() {
   return (
     <section className="page" id="page-contact">
-      <div className="section-label">05 // reach out</div>
+      <div className="section-label">07 // reach out</div>
       <h2 className="section-title">Contact</h2>
 
       <div className="contact-grid">
