@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Sidebar from './components/Sidebar.jsx'
+import Nav from './components/Nav.jsx'
 import Home from './pages/Home.jsx'
 import Projects from './pages/Projects.jsx'
 import About from './pages/About.jsx'
@@ -17,22 +17,20 @@ export default function App() {
   }
 
   return (
-    <div className="app">
-      <Sidebar current={page} onNavigate={handleNavigate} />
-      <main className="main">
-        <div className="wrap">
-          {page === 'home' && <Home onNavigate={handleNavigate} />}
-          {page === 'projects' && <Projects />}
-          {page === 'about' && <About />}
-          {page === 'skills' && <Skills />}
-          {page === 'employment' && <Employment />}
-          {page === 'education' && <Education />}
-          {page === 'contact' && <Contact />}
-        </div>
-        <footer>
-          Built with React · <span className="amber">Sophia Guseth</span> · © 2026
-        </footer>
-      </main>
+    <div className="main">
+      <Nav current={page} onNavigate={handleNavigate} />
+      <div className="wrap">
+        {page === 'home' && <Home onNavigate={handleNavigate} />}
+        {page === 'projects' && <Projects />}
+        {page === 'about' && <About />}
+        {page === 'skills' && <Skills />}
+        {page === 'employment' && <Employment />}
+        {page === 'education' && <Education />}
+        {page === 'contact' && <Contact />}
+      </div>
+      <footer>
+        Built with React · <span className="accent">Sophia Guseth</span> · © 2026
+      </footer>
     </div>
   )
 }

@@ -1,21 +1,17 @@
-import { commits } from '../data.js'
+import { employment } from '../data.js'
 
 export default function Employment() {
   return (
     <section className="page" id="page-employment">
-      <div className="section-label">05 // work history</div>
+      <div className="section-label">Work history</div>
       <h2 className="section-title">Employment</h2>
 
-      <div className="section-label">git log --oneline</div>
-
-      {commits.map((c) => (
-        <div className="commit" key={c.hash}>
-          <div className="commit-hash">{c.hash}</div>
-          <div className="commit-body">
-            <div className="commit-msg">{c.title}</div>
-            <div className="commit-meta">{c.meta}</div>
-            <div className="commit-desc">{c.desc}</div>
-          </div>
+      {employment.map((job) => (
+        <div className="job-entry" key={job.id}>
+          <div className="job-meta">{job.meta}</div>
+          <div className="job-title">{job.title}</div>
+          <div className="job-org">{job.org}</div>
+          <div className="job-desc">{job.desc}</div>
         </div>
       ))}
     </section>

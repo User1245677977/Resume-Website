@@ -2,21 +2,18 @@ import { useState, useEffect } from 'react'
 import { education } from '../data.js'
 
 export default function Education() {
-  const [open, setOpen] = useState(null) // holds the education object, or null
+  const [open, setOpen] = useState(null)
 
-  // close on Escape
   useEffect(() => {
     if (!open) return
-    const onKey = (e) => {
-      if (e.key === 'Escape') setOpen(null)
-    }
+    const onKey = (e) => { if (e.key === 'Escape') setOpen(null) }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
   }, [open])
 
   return (
     <section className="page" id="page-education">
-      <div className="section-label">06 // credentials</div>
+      <div className="section-label">Credentials</div>
       <h2 className="section-title">Education</h2>
 
       {education.map((e) => (
@@ -32,19 +29,15 @@ export default function Education() {
             </div>
           </div>
           <div className="edu-summary">{e.summary}</div>
-          <div className="edu-more">view details →</div>
+          <div className="edu-more">Read more</div>
         </button>
       ))}
 
       {open && (
         <div className="edu-modal-backdrop" onClick={() => setOpen(null)}>
           <div className="edu-modal" onClick={(e) => e.stopPropagation()}>
-            <button className="edu-modal-close" onClick={() => setOpen(null)} aria-label="Close">
-              ✕
-            </button>
-            <div className="edu-modal-eyebrow">
-              {open.date}{open.badge ? ` · ${open.badge}` : ''}
-            </div>
+            <button className="edu-modal-close" onClick={() => setOpen(null)} aria-label="Close">✕</button>
+            <div className="edu-modal-eyebrow">{open.date}{open.badge ? ` · ${open.badge}` : ''}</div>
             <h3 className="edu-modal-title">{open.institution}</h3>
             <div className="edu-modal-location">{open.location}</div>
             <div className="edu-modal-credential">{open.credential}</div>

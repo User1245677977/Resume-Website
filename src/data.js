@@ -1,5 +1,3 @@
-// Central place for your content — edit here, it flows through the whole site.
-
 export const nav = [
   { id: 'home', label: 'Home' },
   { id: 'projects', label: 'Projects' },
@@ -61,30 +59,27 @@ export const skills = [
   },
 ]
 
-export const commits = [
+export const employment = [
   {
-    hash: 'a1b2c3d',
-    title: 'Computer Programmer @ Bossmode.co',
+    id: 'bossmode',
+    title: 'Computer Programmer',
+    org: 'Bossmode.co',
     meta: 'May 2026 — Current · Little Elm, TX',
     desc: 'Shipped a pre-launch brand site and deployment pipeline; currently building an investor pitch platform for the same client.',
   },
   {
-    hash: '7e9f1a0',
-    title: 'Computer Programmer @ Bit Of Logic',
+    id: 'bitoflogic',
+    title: 'Computer Programmer',
+    org: 'Bit Of Logic',
     meta: 'Jul 2024 — Apr 2026 · Valley View, TX',
     desc: 'Built a reporting platform turning raw engine test-stand data into filterable, no-code reports on a centralized SQL database.',
   },
   {
-    hash: '3d4e5f6',
-    title: 'Certificate — Full Stack Dev (MERN)',
-    meta: 'MIT · Jun 2026 · 48 CEUs',
-    desc: 'Front-end (React) and back-end (MongoDB, Docker) development, API integration, deployment.',
-  },
-  {
-    hash: '9a0b1c2',
-    title: 'Robotics Programmer, FIRST Team 815',
+    id: 'robotics',
+    title: 'Robotics Programmer',
+    org: 'FIRST Team 815',
     meta: 'Sep 2021 — Apr 2023 · Allen Park, MI',
-    desc: 'Programmed two autonomous robots in JavaScript, with manual override via standard Xbox controller.',
+    desc: 'Programmed two autonomous robots in JavaScript, with manual override via a standard Xbox controller.',
   },
 ]
 

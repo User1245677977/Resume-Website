@@ -3,21 +3,15 @@ import { skills } from '../data.js'
 
 export default function Skills() {
   const [openSkill, setOpenSkill] = useState(null)
-
-  const toggleSkill = (name) => {
-    setOpenSkill((current) => (current === name ? null : name))
-  }
-
+  const toggleSkill = (name) => setOpenSkill((c) => (c === name ? null : name))
   const active = skills.find((s) => s.name === openSkill)
 
   return (
     <section className="page" id="page-skills">
-      <div className="section-label">04 // capabilities</div>
+      <div className="section-label">Capabilities</div>
       <h2 className="section-title">Skills</h2>
 
-      <p className="bio-block" style={{ marginBottom: '32px' }}>
-        Click any skill below to see how I actually use it.
-      </p>
+      <p className="bio-block">Click any skill below to learn what it is and how I use it.</p>
 
       <div className="skills-grid">
         {skills.map((s) => (
@@ -34,16 +28,13 @@ export default function Skills() {
 
       {active && (
         <div className="skill-detail">
-          <div className="skill-detail-header">
-            <span className="tok-punc">// </span>{active.name}
-          </div>
+          <div className="skill-detail-header">{active.name}</div>
           <p className="skill-detail-body">{active.description}</p>
         </div>
       )}
 
       <div className="learning-line">
-        <span className="amber">▸</span> currently learning:
-        <span className="amber">&nbsp;TBD — tell me what's next</span>
+        <span className="accent">Currently learning:</span> TBD — tell me what's next
       </div>
     </section>
   )
