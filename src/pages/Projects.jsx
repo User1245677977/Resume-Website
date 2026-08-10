@@ -18,7 +18,7 @@ export default function Projects() {
         <div className="stack-row">React · Cloudflare Pages · GitHub Actions · Custom Design System</div>
         <div className="project-links">
           <a className="btn" href="https://www.bossmode.com" target="_blank" rel="noreferrer">Live Site</a>
-          <a className="btn" href="https://github.com/User1245677977?tab=repositories" target="_blank" rel="noreferrer">GitHub</a>
+          <a className="btn" href="https://github.com/User1245677977/bossmodeteaser" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
 
