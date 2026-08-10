@@ -8,8 +8,7 @@ export default function About() {
         I'm Sophia — a full stack developer based in Southgate, MI. I've been writing code
         since high school, starting with autonomous robot programming on my school's FIRST
         Robotics team, and I've been building production software ever since. Outside of
-        work I'm into <em>[hobby one]</em>, <em>[hobby two]</em>, and <em>[hobby three]</em> —
-        tell me what to put here and I'll swap it in.
+        work I'm into <em>reading</em>, <em>painting</em>, and <em>gaming</em>.
       </p>
 
       <hr className="rule" />
@@ -24,7 +23,7 @@ export default function About() {
       </div>
       <div className="fact-row">
         <div className="fact-label">Fun fact</div>
-        <div className="fact-value">[a fun fact about you goes here]</div>
+        <div className="fact-value">I'm very good at riddle and puzzle-solving games.</div>
       </div>
     </section>
   )
