@@ -42,6 +42,17 @@ export default function Education() {
             <div className="edu-modal-location">{open.location}</div>
             <div className="edu-modal-credential">{open.credential}</div>
             <p className="edu-modal-story">{open.story}</p>
+            {open.verifyUrl && (
+              <a
+                className="btn"
+                href={open.verifyUrl}
+                target="_blank"
+                rel="noreferrer"
+                style={{ display: 'inline-block', marginTop: '20px' }}
+              >
+                Verify Certificate
+              </a>
+            )}
           </div>
         </div>
       )}

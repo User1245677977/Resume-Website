@@ -95,6 +95,7 @@ export const education = [
     badge: '48 CEUs',
     summary: 'Intensive full-stack program covering the MERN stack, from front-end React to back-end deployment.',
     story: "During this program I completed an intensive full-stack web development course built around the MERN stack. I built fully functional websites from scratch using JavaScript, HTML, and CSS, and developed real proficiency in React on the front end alongside MongoDB and Docker on the back end. The program gave me a strong foundation in both client-side and server-side development, including database management, API integration, and deployment strategies — the same skills I use day-to-day now, building sites like the Boss Mode teaser and the reporting platform at Bit Of Logic.",
+    verifyUrl: 'https://certificates.emeritus.org/1b5509b2-4c9d-48d1-80e4-e414a6dcb394#acc.trpC3E2O',
   },
   {
     institution: 'University of Michigan, Dearborn',
