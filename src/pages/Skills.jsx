@@ -33,9 +33,6 @@ export default function Skills() {
         </div>
       )}
 
-      <div className="learning-line">
-        <span className="accent">Currently learning:</span> TBD — tell me what's next
-      </div>
     </section>
   )
 }
