@@ -65,21 +65,24 @@ export const employment = [
     title: 'Computer Programmer',
     org: 'Bossmode.co',
     meta: 'May 2026 — Current · Little Elm, TX',
-    desc: 'Shipped a pre-launch brand site and deployment pipeline; currently building an investor pitch platform for the same client.',
+    summary: 'Shipped a pre-launch brand site and deployment pipeline; currently building an investor pitch platform for the same client.',
+    desc: 'Designed and launched a fully responsive teaser site for a pre-launch functional beverage brand, including email capture and waitlist integration. Built a reusable component system and a custom design system to keep the codebase clean and scalable without a build step. Engineered a deployment pipeline using Cloudflare Pages and GitHub, so every push ships straight to production automatically. Currently building a second site for the same client — an investor pitch platform for high-profile investment conversations.',
   },
   {
     id: 'bitoflogic',
     title: 'Computer Programmer',
     org: 'Bit Of Logic',
     meta: 'Jul 2024 — Apr 2026 · Valley View, TX',
-    desc: 'Built a reporting platform turning raw engine test-stand data into filterable, no-code reports on a centralized SQL database.',
+    summary: 'Built a reporting platform turning raw engine test-stand data into filterable, no-code reports on a centralized SQL database.',
+    desc: 'Engineered a reporting platform that transforms raw engine test-stand data into actionable, digestible insights. Designed intuitive interfaces and flexible filtering tools that let users customize reports without writing a line of code. Streamlined data flow by integrating with a centralized SQL database, ensuring fast, reliable access to real-time test data. Built smart reporting features that support deep technical analysis and drive better decision-making across engineering and R&D teams — bridging the gap between complex data and everyday usability.',
   },
   {
     id: 'robotics',
     title: 'Robotics Programmer',
     org: 'FIRST Team 815',
     meta: 'Sep 2021 — Apr 2023 · Allen Park, MI',
-    desc: 'Programmed two autonomous robots in JavaScript, with manual override via a standard Xbox controller.',
+    summary: 'Programmed two autonomous robots in JavaScript, with manual override via a standard Xbox controller.',
+    desc: 'Collaborated with the high school computer programming team to develop software for two autonomous robots using JavaScript. Designed and implemented code enabling the robots to perform predefined tasks within a set timeframe, and programmed both to switch seamlessly between autonomous operation and manual control via a standard Xbox controller. Gained hands-on experience in problem-solving, algorithm development, and teamwork over two full academic years of competitive robotics.',
   },
 ]
 

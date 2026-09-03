@@ -238,15 +238,12 @@ h2.section-title {
   padding: 36px 0;
 }
 .project-shot {
-  height: 220px;
-  background: var(--bg-raised);
+  width: 100%;
+  height: auto;
+  display: block;
   border: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-body);
-  font-style: italic;
-  color: var(--text-faint);
-  font-size: 15px;
   margin-bottom: 22px;
+  object-fit: cover;
 }
 .project-title-row { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
 .project-title { font-family: var(--font-display); font-size: 24px; font-weight: 700; }

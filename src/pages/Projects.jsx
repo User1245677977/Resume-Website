@@ -5,7 +5,7 @@ export default function Projects() {
       <h2 className="section-title">Projects</h2>
 
       <div className="project-card">
-        <div className="project-shot">Screenshot pending — swap this div for an &lt;img&gt;</div>
+        <img className="project-shot" src="/bossmode-screenshot.png" alt="Boss Mode teaser site screenshot" />
         <div className="project-title-row">
           <div className="project-title">Boss Mode™ — Pre-Launch Teaser Site</div>
           <span className="project-tag">Live</span>
